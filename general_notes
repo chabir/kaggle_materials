@@ -8,16 +8,22 @@ Metrics
 Feature engineering for time series:
 
   2. type: count, cumcount (NA with mean), time delta (replace NA with max) (talkingdata-adtracking-fraud-detection) 
-  3. Groupby, count,... :see TalkingData kernels for pandas possibilities
   4. Time delta: be careful of timing test / train: readjust calculation of features to a day window if too many NAs
   5. keep an eye on duplicates for patterns (imagine how dataset was build)
   
+Feature engineering traditional:
+  3. Groupby, count,... :see TalkingData kernels for pandas possibilities
+  4. anonymous data: try extratrees special tool.
+  
   
 Feature selection: 
-LGG: personally trusted a lot on how LightGBM prioritises features, and I operate in the following principles:
+LGB: personally trusted a lot on how LightGBM prioritises features, and I operate in the following principles:
       whenever a batch of features improve local validation score, keep them
       whenever a batch of feature decrease score - I will remove the most import features among this batch according to LightGBM, and re-test
       whenever features were not used by LightGBM at all i.e. 0 importance score I will drop them.
+Time series: 
+  1. try anokas tool
+  2.
 
 
 Categorical variable:
