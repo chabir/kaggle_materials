@@ -36,6 +36,7 @@ Models:
   use rnn with batch of 1
   use rankgaussian for normalization (see porto seguro autoencoder)
   use binary files such as np mmap with an holder in the train generator to prevent memory increase
+  37 reasons why your NN is not working: blog.slavv.com
   
 2. Trees:
   Try Dart (drop out) instead of traditional gbtree
