@@ -1,6 +1,8 @@
 Metrics
   1. AUC: use average of standardise rank
           don’t need all raws as looking for rank especially if a category is not present in test  
+  2. if target of regression is between 0 and 1, try Xentropy with RMSE.
+  3. if target of regression is between 0 and 1, try multiple binary folders.
 
 
 Feature engineering for time series:
