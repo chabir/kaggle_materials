@@ -1,0 +1,40 @@
+Metrics
+  1. AUC: use average of standardise rank
+          don’t need all raws as looking for rank especially if a category is not present in test  
+
+
+Feature engineering for time series:
+
+  2. type: count, cumcount (NA with mean), time delta (replace NA with max) (talkingdata-adtracking-fraud-detection) 
+  3. Groupby, count,... :see TalkingData kernels for pandas possibilities
+  4. Time delta: be careful of timing test / train: readjust calculation of features to a day window if too many NAs
+  5. keep an eye on duplicates for patterns (imagine how dataset was build)
+  
+  
+Feature selection: 
+LGG: personally trusted a lot on how LightGBM prioritises features, and I operate in the following principles:
+      whenever a batch of features improve local validation score, keep them
+      whenever a batch of feature decrease score - I will remove the most import features among this batch according to LightGBM, and re-test
+      whenever features were not used by LightGBM at all i.e. 0 importance score I will drop them.
+
+
+Categorical variable:
+# https://towardsdatascience.com/understanding-feature-engineering-part-2-categorical-data-f54324193e63  for high cardinal
+
+
+Large Datasets Tools:
+1. Dask: pandas based
+2. Big Query: Google SQL (fast!)
+3. memo
+
+Models:
+1. NN:
+  use binary file to load 
+  use time delta if not rnn friendly (talkingdata-adtracking-fraud-detection)
+  use rnn with batch of 1
+  use rankgaussian for normalization (see porto seguro autoencoder)
+  use binary files such as np mmap with an holder in the train generator to prevent memory increase
+  
+2. Trees:
+  Try Dart (drop out) instead of traditional gbtree
+
