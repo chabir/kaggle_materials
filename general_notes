@@ -1,5 +1,5 @@
 Metrics
-  1. AUC: use average of standardise rank
+  1. AUC: use rank of probabilities before averaging submission not proba themselves
           don’t need all raws as looking for rank especially if a category is not present in test  
   2. if target of regression is between 0 and 1, try Xentropy with RMSE.
   3. if target of regression is between 0 and 1, try multiple binary folders.
@@ -10,8 +10,12 @@ Feature engineering for time series:
   2. type: count, cumcount (NA with mean), time delta (replace NA with max) (talkingdata-adtracking-fraud-detection) 
   4. Time delta: be careful of timing test / train: readjust calculation of features to a day window if too many NAs
   5. keep an eye on duplicates for patterns (imagine how dataset was build)
+  6. cluster on text variable or numeric variable after grouping on categorical var and grouping-by this '_cluster', calculate aggregated features like price rank: https://www.kaggle.com/c/avito-demand-prediction/discussion/59886
+  
   
 Feature engineering traditional:
+  1. count NA, count NA per categorical / numerical /text var, count duplicates (even if removed later)
+  2. if feature is a item seq, find the var that changes and the differences of this var as feature.
   3. Groupby, count,... :see TalkingData kernels for pandas possibilities
   4. anonymous data: try extratrees special tool.
   
