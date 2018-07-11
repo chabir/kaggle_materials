@@ -18,6 +18,7 @@ Feature engineering traditional:
   2. if feature is a item seq, find the var that changes and the differences of this var as feature.
   3. Groupby, count,... :see TalkingData kernels for pandas possibilities
   4. anonymous data: try extratrees special tool.
+  5. ideas: https://www.kaggle.com/c/bnp-paribas-cardif-claims-management/forums/t/18754/feature-engineering
   
   
 Feature selection: 
@@ -39,6 +40,9 @@ Large Datasets Tools:
 2. Big Query: Google SQL (fast!)
 3. memo
 
+Cross Validation:
+https://www.kaggle.com/forums/f/15/kaggle-forum/t/18793/cross-validation-strategy-when-blending-stacking/107073
+
 Models:
 1. NN:
   use binary file to load 
@@ -49,5 +53,9 @@ Models:
   37 reasons why your NN is not working: blog.slavv.com
   
 2. Trees:
-  Try Dart (drop out) instead of traditional gbtree
+  a. Try Dart (drop out) instead of traditional gbtree
+  b. custom xgboost objective:
+    https://www.kaggle.com/c/higgs-boson/forums/t/10286/customize-loss-function-in-xgboost?page=2
+    https://github.com/dmlc/xgboost/blob/master/demo/guide-python/custom_objective.py
+    https://www.kaggle.com/scirpus/prudential-life-insurance-assessment/xgb-test
 
