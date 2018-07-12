@@ -1,3 +1,5 @@
+from sklearn.preprocessing import LabelEncoder
+
 for feature in categorical:
     print(feature)
 #     print(f'Transforming {feature}...')
