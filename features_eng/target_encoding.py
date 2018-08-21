@@ -44,3 +44,20 @@ def target_encode(trn_series=None,
     # pd.merge does not keep the index so restore it
     ft_tst_series.index = tst_series.index
     return add_noise(ft_trn_series, noise_level), add_noise(ft_tst_series, noise_level)
+
+
+
+for col in [    
+    
+'param_1',
+'param_2',
+'param_3',
+]:
+    trn, tst = target_encode(train[col], 
+                         test[col], 
+                         target=train.deal_probability, 
+                         min_samples_leaf=0,
+                         smoothing=10,
+                         noise_level=0.01)
+    train[col+'_cat_enc'] = trn
+    test[col+'_cat_enc'] = tst
