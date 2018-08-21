@@ -19,6 +19,7 @@ Feature engineering traditional:
   3. Groupby, count,... :see TalkingData kernels for pandas possibilities
   4. anonymous data: try extratrees special tool.
   5. ideas: https://www.kaggle.com/c/bnp-paribas-cardif-claims-management/forums/t/18754/feature-engineering
+  6. Noisy data: try DAE NN from seguro competition
   
   
 Feature selection: 
@@ -59,3 +60,5 @@ Models:
     https://github.com/dmlc/xgboost/blob/master/demo/guide-python/custom_objective.py
     https://www.kaggle.com/scirpus/prudential-life-insurance-assessment/xgb-test
 
+3. computer vision:
+  a. see W2Unet by Dimitry on DSBL 2018.
