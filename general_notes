@@ -38,7 +38,7 @@ Categorical variable:
 Large Datasets Tools:
 1. Dask: pandas based
 2. Big Query: Google SQL (fast!)
-3. memo
+3. memo (see talking data competition)
 
 Cross Validation:
 https://www.kaggle.com/forums/f/15/kaggle-forum/t/18793/cross-validation-strategy-when-blending-stacking/107073
