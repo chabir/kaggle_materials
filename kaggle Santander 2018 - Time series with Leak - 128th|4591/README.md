@@ -1,6 +1,6 @@
 Santander competition: 128th/4591 - silver medal - august 2018
  
-A. No Leak part:
+A. Tradition ML part:
 
 several method were used: the final feature engineering that works best is to use top 45 xgb features and statistics such as mean, std, median on rows for all the remaining columns. Several Lightgbm and xgboost using CV 5 to 10 folds were used.
 
