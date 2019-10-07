@@ -24,7 +24,19 @@ Feature engineering traditional:
   # https://www.kaggle.com/c/ieee-fraud-detection/discussion/108575#latest-643395
   # https://www.kaggle.com/c/ieee-fraud-detection/discussion/111284#latest-643397
   
-  
+
+Find IDs:
+Raddar: 
+correctly identify cardid's
+identify how public/private test was split
+consider only cards which are only in test set
+take such cards which have at least 1 rows in public LB, and as many as possible in private LB
+make a probe submission (ie using your best submission) and making overrides for that specific card)
+get feedback about card's label in public LB set by sorting "My submissions"
+infer that information to private set
+
+Chris:
+# https://www.kaggle.com/c/ieee-fraud-detection/discussion/111510#latest-643489
   
 Feature selection: 
 LGB: personally trusted a lot on how LightGBM prioritises features, and I operate in the following principles:
