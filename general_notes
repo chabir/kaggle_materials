@@ -20,6 +20,10 @@ Feature engineering traditional:
   4. anonymous data: try extratrees special tool.
   5. ideas: https://www.kaggle.com/c/bnp-paribas-cardif-claims-management/forums/t/18754/feature-engineering
   6. Noisy data: try DAE NN from seguro competition
+  7. Chris threads on tabular data: 
+  # https://www.kaggle.com/c/ieee-fraud-detection/discussion/108575#latest-643395
+  # https://www.kaggle.com/c/ieee-fraud-detection/discussion/111284#latest-643397
+  
   
   
 Feature selection: 
@@ -34,6 +38,7 @@ Time series:
 
 Categorical variable:
 # https://towardsdatascience.com/understanding-feature-engineering-part-2-categorical-data-f54324193e63  for high cardinal
+Use Catboost with the ID column.
 
 
 Large Datasets Tools:
@@ -53,6 +58,12 @@ Models:
   use binary files such as np mmap with an holder in the train generator to prevent memory increase
   37 reasons why your NN is not working: blog.slavv.com
   
+  For categorical, either use one-hot-encoding or better yet use keras.layers.Embedding together with label encoding. 
+  It is helpful to reduce the cardinality of categorical variables as much as possible beforehand. 
+  For numerical, NN's like normally distributed variables. If a variable has a skewed distribution first make a log transform. 
+  Next standardize by subtracting mean and dividing by standard deviation. Finally replace numeric variable NANs with zero 
+  (which is the transformed variable's mean).
+  
 2. Trees:
   a. Try Dart (drop out) instead of traditional gbtree
   b. custom xgboost objective:
@@ -62,3 +73,4 @@ Models:
 
 3. computer vision:
   a. see W2Unet by Dimitry on DSBL 2018.
+  b. Pavel Yakubovskiy who posted models in both Keras and PyTorch. pip install segmentation-models
