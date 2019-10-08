@@ -69,6 +69,7 @@ Models:
   use rankgaussian for normalization (see porto seguro autoencoder)
   use binary files such as np mmap with an holder in the train generator to prevent memory increase
   37 reasons why your NN is not working: blog.slavv.com
+  Solution IEEE NN: https://www.kaggle.com/c/ieee-fraud-detection/discussion/111476#latest-643042. add id to last level.
   
   For categorical, either use one-hot-encoding or better yet use keras.layers.Embedding together with label encoding. 
   It is helpful to reduce the cardinality of categorical variables as much as possible beforehand. 
