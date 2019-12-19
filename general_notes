@@ -49,8 +49,11 @@ Time series:
 
 
 Categorical variable:
-# https://towardsdatascience.com/understanding-feature-engineering-part-2-categorical-data-f54324193e63  for high cardinal
-Use Catboost with the ID column.
+1. # https://towardsdatascience.com/understanding-feature-engineering-part-2-categorical-data-f54324193e63  for high cardinal
+2. Use Catboost with the ID column.
+3. thermometer categories: see python in folder. good for ordinal categories and NN.
+4. target encoding
+
 
 
 Large Datasets Tools:
