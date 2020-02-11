@@ -39,13 +39,16 @@ Chris:
 # https://www.kaggle.com/c/ieee-fraud-detection/discussion/111510#latest-643489
   
 Feature selection: 
-LGB: personally trusted a lot on how LightGBM prioritises features, and I operate in the following principles:
+a. LGB: personally trusted a lot on how LightGBM prioritises features, and I operate in the following principles:
       whenever a batch of features improve local validation score, keep them
       whenever a batch of feature decrease score - I will remove the most import features among this batch according to LightGBM, and re-test
       whenever features were not used by LightGBM at all i.e. 0 importance score I will drop them.
-Time series: 
+b. Time series: 
   1. try anokas tool
   2.
+c. LOFO: 
+d. NULL importance: https://www.kaggle.com/ogrellier/feature-selection-with-null-importances
+
 
 
 Categorical variable:
