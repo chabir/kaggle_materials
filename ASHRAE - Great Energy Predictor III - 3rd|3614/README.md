@@ -1,7 +1,8 @@
 Hello!
 
-Below you can find a outline of how to reproduce my solution for the ASHRAE - Great Energy Predictor III competition.
+A summary of the solution is available on the Kaggle forum [here](https://www.kaggle.com/c/ashrae-energy-prediction/discussion/124984)
 
+Below is an outline of how to reproduce my solution for the ASHRAE - Great Energy Predictor III competition.
 
 (for all notebooks except catboost) . 
 #HARDWARE & SOFTWARE :  
@@ -38,9 +39,6 @@ level1--submission_withoutleak001.ipynb .
 
 3. Run notebook:
 level2--ensembling_model.ipynb . 
-
-
-
 
 (for Catboost):  
 #HARDWARE & SOFTWARE :  
