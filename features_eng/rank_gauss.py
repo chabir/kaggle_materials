@@ -1,3 +1,5 @@
+https://github.com/daxiongshu/notebooks-extended/blob/gauss_rank_blog/blog_notebooks/gauss_rank/GaussRank.ipynb
+
 # from numba import jit 
 import numpy as np
 import pandas as pd
